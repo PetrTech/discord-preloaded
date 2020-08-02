@@ -26,10 +26,7 @@ Be sure to have a discord bot client set up. Go to discord.com/developers. Click
 Be sure to copy the bot's ID on the bots developer page in the BOTS tab.
 Paste the token in const TOKEN in the ''
 To run the bot just turn on your command prompt and go to the bot's code directory and type: 'node .' (without the ''s) and hit enter. It should run the bot.
-You can delete these comments after. (Delete only 3 - 17)
-
-----Logging
-To check the log files simply change their extension to ".txt" or ".log". Both will open in a text editor like a .txt
+You can delete these comments after. (Delete only 3 - 32)
 
 --------------==================INFO==================--------------
 */
@@ -38,9 +35,9 @@ To check the log files simply change their extension to ".txt" or ".log". Both w
 const DiscordAPI = require('discord.js');
 const ConsoleAPI = require('console');
 const DPLib = new DiscordAPI.Client();
-const EULA = 'true';
+const EULA = 'false';
 
-const TOKEN = 'NzMyOTMxMTIzODAxMzU4NDQ4.Xw7xTQ.km-vX-Wr7GSzZv5fKb-oRbBgw3U';
+const TOKEN = 'bot token';
 
 // This function is called once the bot goes online. Please do not change anything and credit me for creating the Discord Preloaded library. I spent a lot of time on this.
 DPLib.on('ready', () =>{
@@ -61,8 +58,7 @@ DPLib.on('ready', () =>{
 
 DPLib.on('message', msg=>{
 	//Enter your bot commands here
-	}
-})
+});
 
 // logins to the bot with the TOKEN.
 DPLib.login(TOKEN);
